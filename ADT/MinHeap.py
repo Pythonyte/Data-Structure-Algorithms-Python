@@ -21,7 +21,7 @@ class MinHeap:
                 self.heapList[parent_index], self.heapList[index] = self.heapList[index], self.heapList[parent_index]
 
             # shift up index to one level and continue checking for more top levels
-            index = parent_index
+            parent_index = parent_index // 2
 
     def smallest_child_index(self, parent_index):
         left_child_index = 2 * parent_index
@@ -49,8 +49,7 @@ class MinHeap:
         :param index:
         :return:
         """
-        level_of_children = index * 2
-        while level_of_children <= self.currentSize:
+        while index * 2 <= self.currentSize:
             child_index = self.smallest_child_index(index)
 
             # swap if element is larger than child
@@ -84,3 +83,15 @@ class MinHeap:
 
         self.shift_item_down(1)
         return min_value
+
+    # def display(self):
+    #     level_end = 1
+    #     fla
+    #     for index, value in enumerate(self.heapList):
+    #         if index == 0:
+    #             continue
+    #         print(value, end=" ", sep=" ")
+    #         if index == level_end:
+    #             print("-->\n")
+    #         level_end = max(level_end, 2*index + 1)
+    #         print("====",index, level_end)
