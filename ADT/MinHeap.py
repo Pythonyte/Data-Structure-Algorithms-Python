@@ -1,4 +1,15 @@
 class MinHeap:
+    """
+    Features of MinHeap:
+        shift_item_up
+        smallest_child_index
+        shift_item_down
+        insert
+        remove
+        build_min_heap
+        get_min
+        display
+    """
     def __init__(self):
         self.heapList = [0]
         self.currentSize = 0
@@ -107,6 +118,12 @@ class MinHeap:
         while index > 0:
             self.shift_item_down(index)
             index -= 1
+
+    def get_min(self):
+        if self.currentSize < 1:
+            return -1
+
+        return self.heapList[1]
 
     def display(self):
         level_end = 1
