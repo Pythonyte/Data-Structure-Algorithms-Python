@@ -93,7 +93,7 @@ class MinHeap:
         use shift item down to establish heap-order property for node.
         complexity O(n)
         explanation: https://www.geeksforgeeks.org/time-complexity-of-building-a-heap/
-        
+
         :param heaplist:
         :return:
         """
@@ -108,14 +108,14 @@ class MinHeap:
             self.shift_item_down(index)
             index -= 1
 
-    # def display(self):
-    #     level_end = 1
-    #     fla
-    #     for index, value in enumerate(self.heapList):
-    #         if index == 0:
-    #             continue
-    #         print(value, end=" ", sep=" ")
-    #         if index == level_end:
-    #             print("-->\n")
-    #         level_end = max(level_end, 2*index + 1)
-    #         print("====",index, level_end)
+    def display(self):
+        level_end = 1
+
+        for index, value in enumerate(self.heapList):
+            if index == 0:
+                continue
+
+            print(value, end=" ", sep=" ")
+            if index == level_end:
+                print("\n")
+                level_end = max(level_end, 2*index + 1)
