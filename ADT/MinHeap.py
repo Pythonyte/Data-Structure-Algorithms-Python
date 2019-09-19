@@ -34,3 +34,7 @@ class MinHeap:
         self.heapList.append(value)
         self.currentSize += 1
         self.shift_item_up(self.currentSize)
+
+
+    def remove(self):
+        pass
