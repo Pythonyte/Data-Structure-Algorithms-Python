@@ -12,3 +12,9 @@ Max Heap
 Min Heap
 Binary Tree
 Graph
+
+
+#Algorithms content from below sources:
+GeeksforGeeks
+Leetcode
+Interviewbit
