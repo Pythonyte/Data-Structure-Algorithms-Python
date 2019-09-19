@@ -84,6 +84,30 @@ class MinHeap:
         self.shift_item_down(1)
         return min_value
 
+    def build_min_heap(self, heaplist):
+        """
+        Go to the last non-leaf node, i.e. total size //2
+        because its a complete binary tree
+
+        for each non-leaf node starting from last to root,
+        use shift item down to establish heap-order property for node.
+        complexity O(n)
+        explanation: https://www.geeksforgeeks.org/time-complexity-of-building-a-heap/
+        
+        :param heaplist:
+        :return:
+        """
+        if not heaplist:
+            return -1
+
+        self.heapList += heaplist
+        self.currentSize += len(heaplist)
+        index = self.currentSize // 2
+
+        while index > 0:
+            self.shift_item_down(index)
+            index -= 1
+
     # def display(self):
     #     level_end = 1
     #     fla
