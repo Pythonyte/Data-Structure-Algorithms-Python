@@ -35,9 +35,38 @@ class MaxHeap:
         self.currentsize += 1
         self.shift_item_up(self.currentsize)
 
-    def shift_item_down(self, index):
-        pass
-    
+    def max_child_index(self, parent_index):
+        left_child_index = 2 * parent_index
+        right_child_index = 2 * parent_index + 1
+
+        # if heaplist is lesser than left_child_index, means no child exists for that parent
+        if self.currentsize < left_child_index:
+            return -1
+
+        # if heaplist is lesser than right_child_index, means left chlid is smallest
+        if self.currentsize < right_child_index:
+            return left_child_index
+
+        # if both childs exists then figure out maximum one
+        if self.heaplist[left_child_index] < self.heaplist[right_child_index]:
+            return right_child_index
+        else:
+            return left_child_index
+
+    def shift_item_down(self, parent_index):
+        """
+        get child index having maximum value
+        if max child is greater than parent, it should be on the top... Move it by swapping
+        Do the same... untill reach to leaf node
+        :param parent_index:
+        :return:
+        """
+        while 2 * parent_index <= self.currentsize:
+            child_index = self.max_child_index(parent_index)
+            if self.heaplist[child_index] > self.heaplist[parent_index]:
+                self.heaplist[child_index], self.heaplist[parent_index] = self.heaplist[parent_index], self.heaplist[child_index]
+            parent_index = child_index
+
     def remove(self):
         """
             Remove top item, which is max of heap
@@ -45,8 +74,9 @@ class MaxHeap:
             shift items down untill leaf
         """
         max_item = self.heaplist[1]
-        self.heaplist = [0] + self.heaplist[2:]
+        self.heaplist[1] = self.heaplist[self.currentsize]
         self.currentsize -= 1
+        self.heaplist.pop()
         self.shift_item_down(1)
         return max_item
 
