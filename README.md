@@ -1,7 +1,6 @@
 # Data-Structure-Algorithms-Python
 This repository holds, all data structure builder classes, basic functionalities and algorithms on top of it. 
-
-# This repository also holds major data structure problems asked in interviews...
+This repository also holds major data structure problems asked in interviews...
 
 # Building Blocks for below Data Structures:
 Stack
@@ -14,10 +13,11 @@ Binary Tree
 Graph
 
 
-#Algorithms content from below sources:
+# Algorithms content from below sources:
 GeeksforGeeks
 Leetcode
 Interviewbit
+
 
 # Abstract Data Structures
 | ADT | URL |
