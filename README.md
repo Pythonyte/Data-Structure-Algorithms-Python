@@ -1,7 +1,6 @@
 # Data-Structure-Algorithms-Python
 This repository holds, all data structure builder classes, basic functionalities and algorithms on top of it. 
-
-# This repository also holds major data structure problems asked in interviews...
+This repository also holds major data structure problems asked in interviews...
 
 # Building Blocks for below Data Structures:
 Stack
@@ -14,11 +13,19 @@ Binary Tree
 Graph
 
 
-#Algorithms content from below sources:
+# Algorithms content from below sources:
 GeeksforGeeks
 Leetcode
 Interviewbit
 
 
-ADTs:
-MinHeap: https://github.com/Pythonyte/Data-Structure-Algorithms-Python/blob/master/ADT/MinHeap.py
+# Abstract Data Structures
+| ADT | URL |
+| --- | --- |
+| MinHeap | https://github.com/Pythonyte/Data-Structure-Algorithms-Python/blob/master/ADT/MinHeap.py |
+| MaxHeap | https://github.com/Pythonyte/Data-Structure-Algorithms-Python/blob/master/ADT/MaxHeap.py |
+
+# Algorithms
+| Title | URL |
+| --- | --- |
+| Test | Test |
