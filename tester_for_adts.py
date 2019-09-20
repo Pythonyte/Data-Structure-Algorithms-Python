@@ -8,13 +8,17 @@ from ADT import MinHeap, MaxHeap
 # print(mh1.heapList)
 # mh1.display()
 
-array = [2,4,5,22,34]
-mh = MaxHeap.MaxHeap()
-for i in array:
-    mh.insert(i)
-print(mh.heaplist)
+# array = []
+# mh = MaxHeap.MaxHeap()
+# for i in array:
+#     mh.insert(i)
+# print(mh.heaplist)
+#
+#
+# mh1 = MaxHeap.MaxHeap()
+# mh1.build_max_heap(array)
+# print(mh1.heaplist)
 
+from Algorithms.Sorting import Sorting
 
-mh1 = MaxHeap.MaxHeap()
-mh1.build_max_heap(array)
-print(mh1.heaplist)
+print(Sorting.heapsort([2,4,5,2,2,12,22]))
