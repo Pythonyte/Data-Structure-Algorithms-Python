@@ -19,6 +19,13 @@ GeeksforGeeks
 Leetcode
 Interviewbit
 
+# Abstract Data Structures
+| ADT | URL |
+| --- | --- |
+| MinHeap | https://github.com/Pythonyte/Data-Structure-Algorithms-Python/blob/master/ADT/MinHeap.py |
+| MaxHeap | https://github.com/Pythonyte/Data-Structure-Algorithms-Python/blob/master/ADT/MaxHeap.py |
 
-ADTs:
-MinHeap: https://github.com/Pythonyte/Data-Structure-Algorithms-Python/blob/master/ADT/MinHeap.py
+# Algorithms
+| Title | URL |
+| --- | --- |
+| Test | Test |
