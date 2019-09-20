@@ -80,3 +80,21 @@ class MaxHeap:
         self.shift_item_down(1)
         return max_item
 
+    def build_max_heap(self, list_to_be_heap):
+        """
+        Fill heap with given list
+        shift items down, but in reverse order
+        to optimize: start from last non leaf node to top
+        :param list_to_be_heap:
+        :return:
+        """
+        self.heaplist = self.heaplist + list_to_be_heap
+        self.currentsize = len(list_to_be_heap)
+
+        # as it follow properties of complete binary tree, non leaf nodes will end to total size / 2
+        index = self.currentsize // 2
+
+        # > 0 : to ignore first element of the array which is 0..
+        while index > 0:
+            self.shift_item_down(index)
+            index -= 1
