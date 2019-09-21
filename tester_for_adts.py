@@ -1,4 +1,4 @@
-from ADT import MinHeap, MaxHeap, Tree
+from ADT import MinHeap, MaxHeap, Tree, BinarySearchTree
 # mh = MinHeap.MinHeap()
 # for i in [2,4,5,2,2,12,22]:
 #     mh.insert(i)
@@ -23,6 +23,11 @@ from ADT import MinHeap, MaxHeap, Tree
 #
 # print(Sorting.heapsort([2,4,5,2,2,12,22]))
 
-
-n1 = Tree.Node(3)
-print(n1)
+bst = BinarySearchTree.BinarySearchTree()
+bst.set_root(10)
+for item in [5,6,7,8]:
+    bst.insert(item)
+bst.print_bst()
+import pdb;pdb.set_trace()
+# n1 = Tree.Node(3)
+# print(n1)
