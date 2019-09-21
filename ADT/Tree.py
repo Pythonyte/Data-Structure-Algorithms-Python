@@ -21,7 +21,40 @@ class Node:
         return children
 
     def is_leaf(self):
-        return  self.left is None and self.right is None
+        return self.left is None and self.right is None
+
+    def has_only_one_child(self):
+        if self.left is not None and self.right is not None:
+            return False
+        elif self.left is None and self.right is None:
+            return False
+        return True
+
+    def inorder_successor(self, current_node):
+        """
+        for a node, inorder_successor is just next element..
+        which will lie in left most side of node's right chlid
+        :return:
+        """
+        if not current_node.right:
+            return None
+        inorder_successor_node = current_node.right
+        while inorder_successor_node.left:
+            inorder_successor_node = inorder_successor_node.left
+        return inorder_successor_node
+
+    def inorder_predecessor(self, current_node):
+        """
+        for a node, inorder_successor is just prev element..
+        which will lie in right most side of node's left chlid
+        :return:
+        """
+        if not current_node.left:
+            return None
+        inorder_successor_node = current_node.left
+        while inorder_successor_node.right:
+            inorder_successor_node = inorder_successor_node.right
+        return inorder_successor_node
 
     def __str__(self):
         left = self.left.value if self.left else 'NULL'

@@ -67,32 +67,6 @@ class BinarySearchTree:
         for item in array[1:]:
             self.insert(item)
 
-    def inorder_successor(self, current_node):
-        """
-        for a node, inorder_successor is just next element..
-        which will lie in left most side of node's right chlid
-        :return:
-        """
-        if not current_node.right:
-            return None
-        inorder_successor_node = current_node.right
-        while inorder_successor_node.left:
-            inorder_successor_node = inorder_successor_node.left
-        return inorder_successor_node.value
-
-    def inorder_predecessor(self, current_node):
-        """
-        for a node, inorder_successor is just prev element..
-        which will lie in right most side of node's left chlid
-        :return:
-        """
-        if not current_node.left:
-            return None
-        inorder_successor_node = current_node.left
-        while inorder_successor_node.right:
-            inorder_successor_node = inorder_successor_node.right
-        return inorder_successor_node.value
-
     def print_bst(self, traversal_type='inorder'):
         if traversal_type == 'inorder':
             self.print_inorder(self.root)

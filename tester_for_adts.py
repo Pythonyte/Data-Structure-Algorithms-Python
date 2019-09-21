@@ -25,9 +25,11 @@ from ADT import MinHeap, MaxHeap, Tree, BinarySearchTree
 
 bst = BinarySearchTree.BinarySearchTree()
 bst.set_root(84)
-for item in [87,43,92,19,37,3,1,20,84]:
+for item in [87,43,92,19,37,3,1,20,83]:
     bst.insert(item)
 bst.print_bst()
-
-# n1 = Tree.Node(3)
-# print(n1)
+print('-----')
+from Problems.delete_node_in_bst import delete_node_bst
+xx = delete_node_bst(bst.root, 20)
+print(xx)
+bst.print_bst()
