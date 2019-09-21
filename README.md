@@ -18,7 +18,7 @@ This repository also holds major data structure problems asked in interviews...
 # Problems
 | BinarySearchTree | URL |
 | --- | --- |
-| Delete node | https://github.com/Pythonyte/Data-Structure-Algorithms-Python/blob/master/Algorithms/Sorting.py |
+| Delete node | https://github.com/Pythonyte/Data-Structure-Algorithms-Python/blob/master/Problems/delete_node_in_bst.py |
 
 | BinaryTree | URL |
 | --- | --- |
