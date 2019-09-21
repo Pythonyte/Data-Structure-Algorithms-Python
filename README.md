@@ -28,4 +28,4 @@ Interviewbit
 # Algorithms
 | Title | URL |
 | --- | --- |
-| Test | Test |
+| Sorting | https://github.com/Pythonyte/Data-Structure-Algorithms-Python/blob/master/Algorithms/Sorting.py |

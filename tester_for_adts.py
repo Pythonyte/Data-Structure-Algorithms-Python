@@ -1,4 +1,4 @@
-from ADT import MinHeap, MaxHeap
+from ADT import MinHeap, MaxHeap, Tree
 # mh = MinHeap.MinHeap()
 # for i in [2,4,5,2,2,12,22]:
 #     mh.insert(i)
@@ -19,6 +19,10 @@ from ADT import MinHeap, MaxHeap
 # mh1.build_max_heap(array)
 # print(mh1.heaplist)
 
-from Algorithms.Sorting import Sorting
+# from Algorithms.Sorting import Sorting
+#
+# print(Sorting.heapsort([2,4,5,2,2,12,22]))
 
-print(Sorting.heapsort([2,4,5,2,2,12,22]))
+
+n1 = Tree.Node(3)
+print(n1)
