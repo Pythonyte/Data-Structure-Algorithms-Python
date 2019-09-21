@@ -5,7 +5,7 @@ class BinarySearchTree:
     Search
     Insert
     Print In Order
-    Delete
+    build_bst
     """
     def __init__(self, root=None):
         self.root = root
@@ -52,6 +52,20 @@ class BinarySearchTree:
             return self._find_node(current_node.left, item)
         else:
             return self._find_node(current_node.right, item)
+
+    def build_bst(self, array=None):
+        """
+        Set root first,
+        iterate over remaining list and insert element one by one into BST
+        :param array:
+        :return:
+        """
+        if not array:
+            print("Provide Valid List")
+            return
+        self.set_root(array[0])
+        for item in array[1:]:
+            self.insert(item)
 
     def print_bst(self, traversal_type='inorder'):
         if traversal_type == 'inorder':
