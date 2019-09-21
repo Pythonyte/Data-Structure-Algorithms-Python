@@ -1,6 +1,7 @@
 def delete_node_bst(current_node, key):
     """
-
+    Complexity: O(h)
+    Worst Case: Skewed BST: O(n)
     :param current_node:
     :param key:
     :return:
