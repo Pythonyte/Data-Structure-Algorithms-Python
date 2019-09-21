@@ -24,10 +24,10 @@ from ADT import MinHeap, MaxHeap, Tree, BinarySearchTree
 # print(Sorting.heapsort([2,4,5,2,2,12,22]))
 
 bst = BinarySearchTree.BinarySearchTree()
-bst.set_root(10)
-for item in [5,6,7,8]:
+bst.set_root(84)
+for item in [87,43,92,19,37,3,1,20,84]:
     bst.insert(item)
 bst.print_bst()
-import pdb;pdb.set_trace()
+
 # n1 = Tree.Node(3)
 # print(n1)
