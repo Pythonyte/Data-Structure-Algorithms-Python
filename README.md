@@ -31,3 +31,13 @@ Interviewbit
 | --- | --- |
 | Sorting | https://github.com/Pythonyte/Data-Structure-Algorithms-Python/blob/master/Algorithms/Sorting.py |
 | Sorting | https://github.com/Pythonyte/Data-Structure-Algorithms-Python/blob/master/Algorithms/Sorting.py |
+
+# Problems
+| BinarySearchTree | URL |
+| --- | --- |
+| Delete node | https://github.com/Pythonyte/Data-Structure-Algorithms-Python/blob/master/Algorithms/Sorting.py |
+
+| BinaryTree | URL |
+| --- | --- |
+| Test | https://github.com/Pythonyte/Data-Structure-Algorithms-Python/blob/master/Algorithms/Sorting.py |
+
