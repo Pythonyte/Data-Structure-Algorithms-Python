@@ -22,7 +22,7 @@ class Node:
 
     def is_leaf(self):
         return  self.left is None and self.right is None
-    
+
     def __str__(self):
         left = self.left.value if self.left else 'NULL'
         right = self.right.value if self.right else 'NULL'

@@ -24,8 +24,10 @@ Interviewbit
 | --- | --- |
 | MinHeap | https://github.com/Pythonyte/Data-Structure-Algorithms-Python/blob/master/ADT/MinHeap.py |
 | MaxHeap | https://github.com/Pythonyte/Data-Structure-Algorithms-Python/blob/master/ADT/MaxHeap.py |
+| BST | https://github.com/Pythonyte/Data-Structure-Algorithms-Python/blob/master/ADT/BinarySearchTree.py |
 
 # Algorithms
 | Title | URL |
 | --- | --- |
+| Sorting | https://github.com/Pythonyte/Data-Structure-Algorithms-Python/blob/master/Algorithms/Sorting.py |
 | Sorting | https://github.com/Pythonyte/Data-Structure-Algorithms-Python/blob/master/Algorithms/Sorting.py |
