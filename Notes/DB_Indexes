@@ -1,0 +1,4 @@
+two families of storage engines: log-structured storage engines, and page-oriented storage engines
+such as B-trees.
+
+
